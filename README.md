@@ -30,12 +30,9 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:3000/generate-password
 
 ## Exemplo de Resposta (JSON)
-
-\`\`\`json
 {
     "password": "Y~pSOel8UX%$"
 }
-\`\`\`
 
 ## Códigos de Resposta
 
