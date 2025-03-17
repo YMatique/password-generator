@@ -60,7 +60,7 @@ function generatePassword(length, uppercase, lowercase, numbers, specialChars) {
     return password;
 }
 app.post('/generate-password', (req, res) => {
-    const { length = 6, uppercase = true, lowercase = true, numbers = true, specialChars = true } = req.body;
+    const { length = 6, uppercase = true, lowercase = true, numbers = true, specialChars = true, } = req.body;
 
     const password = generatePassword(length, uppercase, lowercase, numbers, specialChars);
     res.json({ password });
